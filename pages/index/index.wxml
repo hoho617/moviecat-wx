@@ -1,0 +1,21 @@
+<view class="page-header">
+	<text class="page-header-txt">欢迎来到豆瓣电影首页</text>
+</view>
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true">
+	<block>
+		<swiper-item wx:for="{{imgUrls}}">
+			<image src="{{item}}" class="slide-image" width="345" height="250"></image>
+		</swiper-item>
+	</block>
+</swiper>
+<view class="category">
+  <view class="category__title">请选择你想看的电影列表</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{modules}}">
+    <view class="picker">
+      当前选择：{{modules[index]}}
+    </view>
+  </picker>
+</view>
+<view class="footer">
+       <view>版权所有--谢英 2016</view>
+</view>

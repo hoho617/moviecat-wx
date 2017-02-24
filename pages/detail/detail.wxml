@@ -1,0 +1,14 @@
+<scroll-view scroll-y>
+	<view class="meta">
+		<image src="{{movie.images.large}}" class="poster"></image>
+		<text class="title">{{movie.title}}</text>
+		<text class="original-title">{{movie.original_title}}({{movie.year}})</text>
+		<text class="genres">{{genre}}<text wx:for="{{movie.genres}}">{{item}} <text></text></text></text>
+		<text class="directors">{{director}}<text wx:for="{{movie.directors}}">{{item.name}}<text></text></text></text>
+		<text class="casts">{{cast}}<text wx:for="{{movie.casts}}">{{item.name}}<text></text></text></text>
+	</view>
+	<view class="summary">
+		<text class="label">{{label}}</text>
+		<text class="content">{{movie.summary}}</text>
+	</view>
+</scroll-view>

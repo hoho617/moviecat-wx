@@ -1,0 +1,51 @@
+/**app.wxss**/
+page {
+	font-family: 'arial','Microsoft Yahei';
+	display: flex;
+	flex-direction: column;
+}
+
+.page-body {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	padding-top:86rpx;
+}
+.item {
+	display: flex;
+	padding:20rpx 20rpx;
+	border-bottom: 2rpx solid #ddd;
+}
+.item .poster {
+	width: 128rpx;
+	height: 188rpx;
+	margin-right: 20rpx;
+}
+.item .meta {
+	flex:1;
+}
+.item .title,.item .genre,.item .original-title,
+.item .cast,.item .director {
+	display: block;
+	margin-bottom: 6rpx;
+}
+.item .title {
+	font-size: 32rpx;
+}
+.item .original-title {
+	font-size: 26rpx;
+	color: #999;
+}
+.item .genre {
+	font-size: 28rpx;
+	color: #555;
+}
+.item .cast,.item .director {
+	font-size: 26rpx;
+	color: #222;
+}
+.item .rating {
+	font-size: 30rpx;
+	color: red;
+	font-weight: bold;
+}

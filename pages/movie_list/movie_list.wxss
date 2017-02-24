@@ -1,0 +1,74 @@
+/**index.wxss**/
+.page-header {
+	display: flex;
+	justify-content: center;
+	margin-bottom:20rpx;
+	position:fixed;
+	background-color: #fff;
+	z-index: 1000;
+	width: 100%;
+	border-bottom: 2rpx solid #ddd;
+}
+ .page-header .page-header-txt {
+	padding: 30rpx 40rpx;
+	text-align: center;
+	font-size: 46rpx;
+	font-family: sans-serif;
+	font-weight: 600;
+}
+.page-body {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	padding-top:106rpx;
+}
+.arr {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.pager {
+  padding-left: 0;
+  margin: 10px 0;
+  list-style: none;
+  overflow: hidden;
+}
+.pager view {
+  display: inline-block;
+}
+.pager .previous {
+	float: left;
+	margin-left: 20rpx;
+}
+.pager .next {
+	float: right;
+	margin-right: 20rpx;
+}
+button[plain] {
+	border-radius: 40rpx;
+	padding-left: 18rpx;
+	padding-right: 18rpx;
+	font-size: 32rpx;
+	color: #801dae;
+	border-color:#ccc;
+	line-height: 2.2;
+}
+.pager .next button[plain]{
+	padding-left: 36rpx;
+	padding-right: 36rpx;
+}
+.left,.right {
+	font-size: 34rpx;
+}
+.disabled {
+	cursor: not-allowed;
+}
+.foot {
+        	font-size: 32rpx;
+}
+ .text-right {
+            float: right;
+            margin-top: 18rpx;
+            margin-bottom: 0;
+            margin-right: 25rpx;
+        }

@@ -1,0 +1,50 @@
+.meta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 1000rpx;
+	padding: 50rpx 40rpx;
+}
+.poster {
+	width: 80%;
+	height: 80%;
+	margin: 20rpx;
+}
+.title,.original-title,.genres,.casts,.directors {
+	display: block;
+	margin-bottom: 8rpx;
+}
+.title {
+	font-size: 38rpx;
+	color: #222;
+}
+.original-title {
+	font-size: 30rpx;
+	color: #555;
+}
+.genres,.directors {
+	font-size: 34rpx;
+	color: #444;
+}
+.casts {
+	font-size: 30rpx;
+	color: #333;
+}
+.summary {
+	padding: 10rpx 35rpx;
+	font-family: sans-serif;
+}
+.label,.content {
+	display: block;
+}
+.label {
+	font-size: 44rpx;
+	font-weight: bold;
+	margin-bottom: 6rpx;
+}
+.content {
+	font-size: 34rpx;
+	text-indent: 2rem;
+	line-height: 2em;
+	color: #444;
+}

@@ -1,0 +1,54 @@
+/**index.wxss**/
+.page-header {
+	display: flex;
+	justify-content: center;
+	margin-bottom:10rpx;
+	position:fixed;
+	background-color: #fff;
+	z-index: 1000;
+	width: 100%;
+}
+.page-header-txt {
+	padding: 40rpx 40rpx;
+	font-style: italic;
+	color: purple;
+	text-align: center;
+	font-size: 52rpx;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+swiper {
+	display: block;
+	height: 180px;
+	margin-top: 40rpx;
+	width: 315px;
+	margin: 0 auto;
+}
+image {
+	width: 320px;
+	height: 300px;
+	display: inline-block;
+}
+.category {
+	font-family: sans-serif;
+	margin-top: 100rpx;
+}
+.category__title {
+	text-align: center;
+	font-size: 42rpx;
+	padding: 30rpx 0;
+}
+.picker {
+	margin-left: 30rpx;
+}
+.module {
+	display: inline-block;
+}
+.footer {
+	font-size: 36rpx;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 20rpx;
+	right:20rpx;
+	color: #444;
+}

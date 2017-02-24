@@ -1,0 +1,32 @@
+<view class="page-header">
+	<text class="page-header-txt">{{title}}</text>
+</view>
+<scroll-view class="page-body" scroll-y>
+	<navigator wx:for="{{subjects}}" wx:for-item="subject" url="../detail/detail?id={{subject.id}}">
+		<view class="item">
+			<image class="poster" src="{{subject.images.small}}"></image>
+			<view class="meta">
+				<text class="title">{{subject.title}}</text>
+				<text class="original-title">{{subject.original_title}}({{subject.year}})</text>
+				<text class="genre">类型：<text wx:for="{{subject.genres}}" wx:for-item="genre">{{genre}}<text wx:if="{{index<subject.genres.length-1}}">、</text></text></text>
+				<text class="director">导演：<text wx:for="{{subject.directors}}" wx:for-item="director">{{director.name}}<text wx:if="{{index<subject.directors.length-1}}">、</text></text></text>
+				<text class="cast">主演：<text wx:for="{{subject.casts}}" wx:for-item="cast">{{cast.name}}<text wx:if="{{index<subject.casts.length-1}}">、</text></text></text>
+			</view>
+			<view class="rating">
+				<text>{{subject.rating.average}}</text>
+			</view>
+		</view>
+	</navigator>
+	<view wx:if="{{loading}}">
+		<view class="foot">
+		<view class="text-right">第{{page}} / {{totalPages}}页  总共:  {{totalCount}} 条记录</view>
+	</view>
+	<view class="arr">
+  		<view class="pager">
+   			 <view class="previous"><button plain="true" bindtap="goPrev" disabled="{{page<=1}}"><text class="left">«</text>    Previous</button></view>
+   			 <view class="next"><button plain="true" bindtap="goNext" disabled="{{page>=totalPages}}">Next    <text class="right">»</text></button></view>
+  		</view>
+	</view>
+	</view>
+
+</scroll-view>

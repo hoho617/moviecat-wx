@@ -1,0 +1,19 @@
+
+.input-txt {
+	padding: 20rpx 120rpx;
+	color: #555;
+	font-size: 36rpx;
+	font-weight: 550;
+	text-align: center;
+	font-family: sans-serif;
+}
+.page-header {
+	display: flex;
+	justify-content: center;
+	margin-bottom:10rpx;
+	position:fixed;
+	background-color: #fff;
+	z-index: 1000;
+	width: 100%;
+	border-bottom: 4rpx solid #801dae;
+}
